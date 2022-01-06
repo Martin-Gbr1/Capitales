@@ -1,18 +1,20 @@
 # Capitales
 Jeu des capitales
 
-Le code génère bien une capitale aléatoire 
-Je ne veux pas de répétition dans les questions (pas de doublon)
+C'est bon j'ai suivi tes conseils et je crée maintenant un nouveau dict aléatoire que je parcours.
 
-La méthode random.choice fonctionne mais fait des doublons
+Petit problème :
 
-La méthode random.sample ne fait pas de doublons mais j'ai un pb :
-    Les input() d'après ne souhaite pas concaténer des str avec des list
-    Donc j'ai choisi d'appeler la fonction str() pour convertir la liste RdmCap en str
+    J'ai rajouté une aide. Après 3 muavaises réponses consécutives, on te propose 4 villes et tu peux choisir.
+    Je demande donc 3 valeurs aléatoire du dict et j'y ajoute la bonne réponse. 
 
-Or dans la console le résultat n'est pas : "Quelle est la capitale de Ouganda ?" mais, "Quelle est la capitale de ['Oudanda']"
+    Je mets ces 4 valeurs dans une liste dont je randomise l'ordre.
+    Mais je crois que sans le vouloir je crée une liste dans une liste, et le résultat apparaît avec des []
 
-Comment faire en sorte de ne plus avoir les crochets ? 
-
-Merci !!
-      
+Piste d'amélioration :
+    
+    Je vais essayer de stocker les pays dont la réponse était érronée dans une liste à part.
+    Pour en suite pouvoir jouer sur cette liste only et progresser plus vite.
+    
+Voilà, dis moi si tu vois des amélioration ou si mon code est mal géré.
+Je ne connais pas du tout les "good practices" en code.
